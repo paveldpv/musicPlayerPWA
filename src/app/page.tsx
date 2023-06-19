@@ -1,4 +1,5 @@
 'use client'
+
 import { Comfortaa } from 'next/font/google';
 import Footer from '../../components/container/Footer';
 import Main from '../../components/container/Main';
@@ -22,10 +23,13 @@ export default function Home() {
   },[])
   
   return (
+    
+     
     <div className={` w-96 bg-bgViolet ${comfortaa.className} m-auto  flex flex-col h-full relative `}>      
       <Footer statusBarRadio={currentStream.nameRadio || `выберите радио`} />
       <Main data={data} setRadio={setCurrentStream} idCurrentStream={currentStream.id} setProgressAudio={setProgressAudio} />
       <CommandPanel src={currentStream?.src || ``} setProgressAudio={setProgressAudio} progressAudio={progressAudio}/>   
     </div>
+    
   );
 }
