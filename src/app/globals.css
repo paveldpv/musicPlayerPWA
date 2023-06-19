@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background: #110a18;
+}
+div::-webkit-scrollbar{
+  width: 0;
+}
+.buttonViolet {
+  background: rgb(134, 127, 145);
+  background: linear-gradient(152deg, rgba(134, 127, 145, 1) 0%, rgba(35, 27, 47, 1) 75%);
+}
+.buttonSelected{
+  background: rgb(227,221,214);
+background: linear-gradient(152deg, rgba(227,221,214,1) 0%, rgba(217,159,0,1) 75%);
+}
